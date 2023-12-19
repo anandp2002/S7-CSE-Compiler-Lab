@@ -3,7 +3,7 @@
 %}
 
 %%
-[a-zA-Z]+@[a-zA-Z]+[.][com|in] {printf("Valid\n"); return 0;}
+[a-zA-Z0-9]+@[a-zA-Z]+[.][com|in] {printf("Valid\n"); return 0;}
 .|\n {printf("Invalid\n"); return 0;}
 %%
 
